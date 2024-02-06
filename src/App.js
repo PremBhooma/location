@@ -41,7 +41,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Your Current Location: {userLocation?.display_name}</h1>
+      <h1>Your Current Location: <span style={{ color: "#e4c068" }}>{userLocation?.address?.city_district}</span></h1>
+      <h1>Address:<span style={{ color: "#e4c068" }}>{userLocation?.display_name}</span> </h1>
     </div>
   );
 }
